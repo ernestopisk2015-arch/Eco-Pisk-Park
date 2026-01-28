@@ -4,66 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco Pisk Park | El Futuro Sostenible</title>
+    
+    <link rel="icon" type="image/jpg" href="logo-eco-pisk.jpg">
+
     <style>
         body {
-            background-color: #000; /* Negro profundo */
-            color: #D4AF37; /* Dorado elegante */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+            color: #D4AF37;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
+            padding: 20px;
         }
-        img {
-            max-width: 300px;
-            margin-bottom: 20px;
+        .logo-principal {
+            max-width: 220px;
+            margin-bottom: 25px;
             border: 2px solid #D4AF37;
             border-radius: 50%;
             padding: 10px;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
         }
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            letter-spacing: 5px;
+            font-weight: 900;
         }
         p {
             font-size: 1.2rem;
-            max-width: 600px;
-            color: #fff; /* Blanco para lectura fácil */
+            max-width: 650px;
+            color: #e0e0e0;
+            line-height: 1.8;
+            margin-bottom: 30px;
         }
         .btn {
-            background-color: #D4AF37;
+            background: linear-gradient(145deg, #D4AF37, #B8860B);
             color: #000;
-            padding: 15px 30px;
+            padding: 20px 40px;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 5px;
-            margin-top: 25px;
-            transition: 0.3s;
+            border-radius: 50px;
+            display: inline-block;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
         }
         .btn:hover {
-            background-color: #fff;
-            color: #000;
+            background: #fff;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(212, 175, 55, 0.4);
+        }
+        .footer-link {
+            margin-top: 50px;
+            color: #D4AF37;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
+        }
+        .footer-link:hover {
+            border-bottom: 1px solid #D4AF37;
         }
     </style>
 </head>
 <body>
 
-    <img src="logo-eco-pisk.jpg" alt="Eco Pisk Park Logo">
+    <img src="logo-eco-pisk.jpg" alt="Eco Pisk Park Logo" class="logo-principal">
 
     <h1>Eco Pisk Park</h1>
-    <p>El primer paraíso tecnológico y sostenible en el corazón del Perené. <br> 
-    Estamos formalizando el futuro. Próximamente lanzamiento oficial.</p>
+    <p>Únete a la revolución inmobiliaria y tecnológica de la Selva Central. <br> 
+    Un ecosistema autosustentable respaldado por <strong>Neo Pisk Motors</strong>.</p>
 
-    <a href="https://wa.me/TU_NUMERO" class="btn">SOLICITAR INFORMACIÓN</a>
+    <a href="https://chat.whatsapp.com/CLAaAmZenrR0LNGP8nTEBc" target="_blank" class="btn">
+        UNIRSE AL GRUPO DE INVERSORES
+    </a>
 
-    <div style="margin-top: 50px;">
-        <a href="https://neopisk.lat" style="color: #D4AF37; text-decoration: none;">Ver Neo Pisk Motors & Robótica</a>
-    </div>
+    <br>
+    <a href="https://neopisk.lat" class="footer-link">VISITAR NEO PISK MOTORS & ROBÓTICA</a>
 
 </body>
 </html>
