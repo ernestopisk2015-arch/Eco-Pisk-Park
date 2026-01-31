@@ -1,4 +1,4 @@
-        <!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,9 @@
         
         body { 
             margin: 0; padding: 0; background-color: var(--dark-bg);
+            /* FONDO RESTAURADO */
             background-image: linear-gradient(rgba(13, 13, 13, 0.88), rgba(13, 13, 13, 0.88)), 
-                              url('https://raw.githubusercontent.com/ernestopisk2015-arch/Eco-Pisk-Park/refs/heads/main/cacao1.jpg');
+                              url('https://raw.githubusercontent.com/ernestopisk2015-arch/Eco-Pisk-Park/main/cacao1.jpg');
             background-attachment: fixed; background-size: cover; background-position: center;
             color: #fff; font-family: 'Inter', sans-serif; 
         }
@@ -29,7 +30,12 @@
             display: flex; flex-direction: column; min-height: 620px; text-align: center;
         }
         .team-img-container { width: 100%; height: 320px; overflow: hidden; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .team-img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .team-img { 
+            width: 100%; height: 100%; 
+            object-fit: cover; 
+            object-position: top; 
+        }
 
         .btn-pisk { background: var(--pisk-gold); color: #000; padding: 18px; border-radius: 50px; font-weight: 800; display: block; text-align: center; transition: 0.3s; text-decoration: none; font-family: 'Orbitron'; }
         .btn-pisk:hover { transform: scale(1.05); box-shadow: 0 0 25px rgba(255, 215, 0, 0.5); }
@@ -57,7 +63,7 @@
                 <p class="leading-relaxed font-medium">Respaldado por el mundo físico. Cada token vendido ayuda a capitalizar el sistema de acopio y logística más grande de la región, uniendo tecnología y tierra para un futuro sostenible.</p>
             </div>
             <div class="rounded-3xl border-2 border-yellow-400 overflow-hidden shadow-2xl">
-                <img src="https://raw.githubusercontent.com/ernestopisk2015-arch/Eco-Pisk-Park/refs/heads/main/cacao%20cripto.jpg" alt="Cacao Cripto RWA" class="w-full h-full object-cover">
+                <img src="https://raw.githubusercontent.com/ernestopisk2015-arch/Eco-Pisk-Park/main/cacao%20cripto.jpg" alt="Cacao Cripto RWA" class="w-full h-full object-cover">
             </div>
         </div>
 
@@ -65,10 +71,8 @@
             <div class="glass-panel border-t-4 border-yellow-400">
                 <h3 class="text-xl font-bold mb-2">Modia Paynenta Seed</h3>
                 <p class="text-xs opacity-70 mb-6 uppercase tracking-wider">Participa en la Preventa Seed</p>
-                
                 <label class="text-xs opacity-50 uppercase font-bold">Monto USD a invertir</label>
                 <input type="number" id="usdInput" placeholder="0.00" oninput="calcularPiskUSD()">
-                
                 <div class="my-8">
                     <p class="text-xs opacity-50 uppercase font-bold">$PISK a recibir:</p>
                     <div class="flex items-baseline gap-2">
@@ -76,7 +80,6 @@
                         <span class="text-green-400 font-bold text-xl">$PISK</span>
                     </div>
                 </div>
-
                 <a href="https://neopisk.lat/invertir.html" target="_blank" class="btn-pisk">INVERTIR EN $PISK AHORA</a>
                 <p class="text-[10px] mt-4 opacity-40 text-center uppercase tracking-widest font-bold">⚠️ IMPORTANTE: Use Red Polygon (MATIC) para el envío.</p>
             </div>
@@ -88,22 +91,10 @@
                 </div>
                 <h3 class="text-2xl font-bold mb-6 uppercase tracking-wider">Roadmap</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="roadmap-item">
-                        <div class="phase-num">1. Fase Seed</div>
-                        <p class="text-xs opacity-70">Lanzamiento inicial para capital de acopio y logística base.</p>
-                    </div>
-                    <div class="roadmap-item">
-                        <div class="phase-num">2. Expansión</div>
-                        <p class="text-xs opacity-70">Integración de flota propia y trazabilidad en tiempo real.</p>
-                    </div>
-                    <div class="roadmap-item">
-                        <div class="phase-num">3. Exportación</div>
-                        <p class="text-xs opacity-70">Conexión directa con mercados internacionales sin intermediarios.</p>
-                    </div>
-                    <div class="roadmap-item">
-                        <div class="phase-num">4. Ecosistema</div>
-                        <p class="text-xs opacity-70">Mercado digital de productos finales pagados con $PISK.</p>
-                    </div>
+                    <div class="roadmap-item"><div class="phase-num">1. Fase Seed</div><p class="text-xs opacity-70">Lanzamiento inicial para capital de acopio y logística base.</p></div>
+                    <div class="roadmap-item"><div class="phase-num">2. Expansión</div><p class="text-xs opacity-70">Integración de flota propia y trazabilidad en tiempo real.</p></div>
+                    <div class="roadmap-item"><div class="phase-num">3. Exportación</div><p class="text-xs opacity-70">Conexión directa con mercados internacionales sin intermediarios.</p></div>
+                    <div class="roadmap-item"><div class="phase-num">4. Ecosistema</div><p class="text-xs opacity-70">Mercado digital de productos finales pagados con $PISK.</p></div>
                 </div>
             </div>
         </div>
@@ -111,27 +102,37 @@
         <section id="liderazgo" class="py-12">
             <h2 class="text-center text-4xl font-extrabold mb-16 uppercase tracking-[5px]">Liderazgo Estratégico</h2>
             <div class="flex flex-wrap justify-center gap-10">
+                
                 <div class="team-card">
-                    <div class="team-img-container"><img src="asset/IMG_20260119_091506939.jpg" alt="Ernesto Piskulich CEO" class="team-img"></div>
+                    <div class="team-img-container">
+                        <img src="https://raw.githubusercontent.com/ernestopisk2015-arch/Neopisk/main/asset/IMG_20260119_091506939.jpg" class="team-img">
+                    </div>
                     <h3 class="text-xl font-bold mb-1">Ernesto Piskulich</h3>
                     <p class="text-green-600 font-bold text-xs mb-4 uppercase tracking-widest">CEO & Fundador</p>
                     <p class="text-sm text-gray-600 leading-relaxed mb-6 flex-grow">Estratega en adquisición de activos reales y arquitectura financiera en Blockchain.</p>
                     <a href="https://www.facebook.com/share/1ArekGRGgE/" target="_blank" class="bg-[#1877F2] text-white py-3 rounded-full font-bold text-sm transition hover:opacity-90">Perfil Facebook</a>
                 </div>
+
                 <div class="team-card">
-                    <div class="team-img-container"><img src="asset/Luis Gavilan.jpg" alt="Luis Gavilán Fleet Manager" class="team-img"></div>
+                    <div class="team-img-container">
+                        <img src="https://raw.githubusercontent.com/ernestopisk2015-arch/Neopisk/main/asset/Luis%20Gavilan.jpg" class="team-img">
+                    </div>
                     <h3 class="text-xl font-bold mb-1">Luis Gavilán</h3>
                     <p class="text-green-600 font-bold text-xs mb-4 uppercase tracking-widest">Gerente de Flota</p>
                     <p class="text-sm text-gray-600 leading-relaxed mb-6 flex-grow">Experto en optimización de rutas, mantenimiento preventivo y gestión de transporte pesado.</p>
                     <a href="https://www.facebook.com/share/1ATjUgWrbp/" target="_blank" class="bg-[#1877F2] text-white py-3 rounded-full font-bold text-sm transition hover:opacity-90">Perfil Facebook</a>
                 </div>
+
                 <div class="team-card">
-                    <div class="team-img-container"><img src="asset/Jefferson Avalos.jpg" alt="Jefferson Ávalos COO" class="team-img"></div>
+                    <div class="team-img-container">
+                        <img src="https://raw.githubusercontent.com/ernestopisk2015-arch/Neopisk/main/asset/Jefferson%20Avalos.jpg" class="team-img">
+                    </div>
                     <h3 class="text-xl font-bold mb-1">Jefferson Ávalos</h3>
                     <p class="text-green-600 font-bold text-xs mb-4 uppercase tracking-widest">Gerente de Operaciones</p>
                     <p class="text-sm text-gray-600 leading-relaxed mb-6 flex-grow">Líder en logística operativa y optimización de rendimientos en campo.</p>
                     <a href="https://www.facebook.com/share/1K1u1x6YJy/" target="_blank" class="bg-[#1877F2] text-white py-3 rounded-full font-bold text-sm transition hover:opacity-90">Perfil Facebook</a>
                 </div>
+
             </div>
         </section>
     </div>
@@ -160,4 +161,4 @@
     }
     </script>
 </body>
-</html>
+</html>    
