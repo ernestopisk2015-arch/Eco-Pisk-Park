@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco Pisk | Inversión Agrícola & Blockchain</title>
+    
+    <link rel="icon" type="image/jpg" href="https://raw.githubusercontent.com/ernestopisk2015-arch/Neopisk/main/asset/Eco%20Pisk.jpg">
+    
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,8 +15,7 @@
         
         body { 
             margin: 0; padding: 0; background-color: var(--dark-bg);
-            /* FONDO RESTAURADO */
-            background-image: linear-gradient(rgba(13, 13, 13, 0.88), rgba(13, 13, 13, 0.88)), 
+            background-image: linear-gradient(rgba(13, 13, 13, 0.9), rgba(13, 13, 13, 0.9)), 
                               url('https://raw.githubusercontent.com/ernestopisk2015-arch/Eco-Pisk-Park/main/cacao1.jpg');
             background-attachment: fixed; background-size: cover; background-position: center;
             color: #fff; font-family: 'Inter', sans-serif; 
@@ -30,17 +32,12 @@
             display: flex; flex-direction: column; min-height: 620px; text-align: center;
         }
         .team-img-container { width: 100%; height: 320px; overflow: hidden; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        
-        .team-img { 
-            width: 100%; height: 100%; 
-            object-fit: cover; 
-            object-position: top; 
-        }
+        .team-img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 
         .btn-pisk { background: var(--pisk-gold); color: #000; padding: 18px; border-radius: 50px; font-weight: 800; display: block; text-align: center; transition: 0.3s; text-decoration: none; font-family: 'Orbitron'; }
         .btn-pisk:hover { transform: scale(1.05); box-shadow: 0 0 25px rgba(255, 215, 0, 0.5); }
         
-        input { background: #fff; color: #000; padding: 15px; border-radius: 10px; width: 100%; font-size: 1.5rem; font-weight: bold; margin: 10px 0; outline: none; border: 2px solid var(--pisk-gold); }
+        input { background: #fff; color: #000; padding: 10px; border-radius: 10px; width: 100%; font-size: 1.5rem; font-weight: bold; margin: 10px 0; outline: none; border: 2px solid var(--pisk-gold); }
 
         .roadmap-item { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; }
         .phase-num { color: var(--pisk-gold); font-family: 'Orbitron'; font-size: 1.1rem; margin-bottom: 5px; }
@@ -52,25 +49,35 @@
             <a href="en.html" class="bg-yellow-400 text-black px-4 py-1 rounded-md text-xs font-bold hover:bg-white transition">English Version</a>
         </div>
 
-        <header class="mb-12">
-            <h1 class="text-5xl md:text-6xl mb-2" style="background: linear-gradient(90deg, #fff, var(--pisk-gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">ECO PISK</h1>
-            <div class="tagline text-yellow-400 font-bold text-sm tracking-widest uppercase">INVERSIÓN AGRÍCOLA | BLOCKCHAIN + AGRICULTURA</div>
+        <header class="mb-16 flex flex-col md:flex-row items-center justify-center gap-6">
+            <img src="https://raw.githubusercontent.com/ernestopisk2015-arch/Neopisk/main/asset/Eco%20Pisk.jpg" 
+                 alt="Logo Eco Pisk" 
+                 class="w-24 h-24 md:w-32 md:h-32 object-contain rounded-full border-2 border-yellow-400 shadow-[0_0_20px_rgba(255,215,0,0.3)]">
+            
+            <div class="text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-black" style="background: linear-gradient(90deg, #fff, var(--pisk-gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    ECO PISK
+                </h1>
+                <div class="tagline text-yellow-400 font-bold text-sm tracking-widest uppercase">
+                    INVERSIÓN AGRÍCOLA | BLOCKCHAIN + AGRICULTURA
+                </div>
+            </div>
         </header>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div class="bg-[#f4f4f4] text-gray-800 p-8 rounded-2xl border-l-[10px] border-purple-600 shadow-xl">
+            <div class="bg-[#f4f4f4] text-gray-800 p-8 rounded-2xl border-l-[10px] border-purple-600 shadow-xl flex flex-col justify-center">
                 <h2 class="text-2xl font-bold text-green-600 mb-4 uppercase">Inversión con Propósito Real</h2>
                 <p class="leading-relaxed font-medium">Respaldado por el mundo físico. Cada token vendido ayuda a capitalizar el sistema de acopio y logística más grande de la región, uniendo tecnología y tierra para un futuro sostenible.</p>
             </div>
             <div class="rounded-3xl border-2 border-yellow-400 overflow-hidden shadow-2xl">
-                <img src="https://raw.githubusercontent.com/ernestopisk2015-arch/Eco-Pisk-Park/main/cacao%20cripto.jpg" alt="Cacao Cripto RWA" class="w-full h-full object-cover">
+                <img src="https://raw.githubusercontent.com/ernestopisk2015-arch/Eco-Pisk-Park/main/cacao%20cripto.jpg" alt="Cacao Cripto" class="w-full h-full object-cover">
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
             <div class="glass-panel border-t-4 border-yellow-400">
-                <h3 class="text-xl font-bold mb-2">Modia Paynenta Seed</h3>
-                <p class="text-xs opacity-70 mb-6 uppercase tracking-wider">Participa en la Preventa Seed</p>
+                <h3 class="text-xl font-bold mb-2">Preventa Seed PISK</h3>
+                <p class="text-xs opacity-70 mb-6 uppercase tracking-wider">Calcula tu participación</p>
                 <label class="text-xs opacity-50 uppercase font-bold">Monto USD a invertir</label>
                 <input type="number" id="usdInput" placeholder="0.00" oninput="calcularPiskUSD()">
                 <div class="my-8">
@@ -81,20 +88,20 @@
                     </div>
                 </div>
                 <a href="https://neopisk.lat/invertir.html" target="_blank" class="btn-pisk">INVERTIR EN $PISK AHORA</a>
-                <p class="text-[10px] mt-4 opacity-40 text-center uppercase tracking-widest font-bold">⚠️ IMPORTANTE: Use Red Polygon (MATIC) para el envío.</p>
+                <p class="text-[10px] mt-4 opacity-40 text-center uppercase tracking-widest font-bold">⚠️ Red Polygon (MATIC) únicamente.</p>
             </div>
 
             <div>
                 <div class="bg-gray-100 text-black p-4 rounded-xl mb-6 flex items-center gap-4 shadow-lg">
                     <span class="text-2xl">☕+🍫</span>
-                    <p class="font-bold text-sm uppercase">Nuestra Hoja de Ruta - RWA</p>
+                    <p class="font-bold text-sm uppercase">Hoja de Ruta RWA</p>
                 </div>
                 <h3 class="text-2xl font-bold mb-6 uppercase tracking-wider">Roadmap</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="roadmap-item"><div class="phase-num">1. Fase Seed</div><p class="text-xs opacity-70">Lanzamiento inicial para capital de acopio y logística base.</p></div>
-                    <div class="roadmap-item"><div class="phase-num">2. Expansión</div><p class="text-xs opacity-70">Integración de flota propia y trazabilidad en tiempo real.</p></div>
-                    <div class="roadmap-item"><div class="phase-num">3. Exportación</div><p class="text-xs opacity-70">Conexión directa con mercados internacionales sin intermediarios.</p></div>
-                    <div class="roadmap-item"><div class="phase-num">4. Ecosistema</div><p class="text-xs opacity-70">Mercado digital de productos finales pagados con $PISK.</p></div>
+                    <div class="roadmap-item"><div class="phase-num">1. Fase Seed</div><p class="text-xs opacity-70">Capital para acopio y logística base.</p></div>
+                    <div class="roadmap-item"><div class="phase-num">2. Expansión</div><p class="text-xs opacity-70">Flota propia y trazabilidad blockchain.</p></div>
+                    <div class="roadmap-item"><div class="phase-num">3. Exportación</div><p class="text-xs opacity-70">Mercado internacional directo.</p></div>
+                    <div class="roadmap-item"><div class="phase-num">4. Ecosistema</div><p class="text-xs opacity-70">Mercado digital de productos finales.</p></div>
                 </div>
             </div>
         </div>
@@ -110,7 +117,7 @@
                     <h3 class="text-xl font-bold mb-1">Ernesto Piskulich</h3>
                     <p class="text-green-600 font-bold text-xs mb-4 uppercase tracking-widest">CEO & Fundador</p>
                     <p class="text-sm text-gray-600 leading-relaxed mb-6 flex-grow">Estratega en adquisición de activos reales y arquitectura financiera en Blockchain.</p>
-                    <a href="https://www.facebook.com/share/1ArekGRGgE/" target="_blank" class="bg-[#1877F2] text-white py-3 rounded-full font-bold text-sm transition hover:opacity-90">Perfil Facebook</a>
+                    <a href="https://www.facebook.com/share/1ArekGRGgE/" target="_blank" class="bg-[#1877F2] text-white py-3 rounded-full font-bold text-sm transition hover:opacity-90">Facebook</a>
                 </div>
 
                 <div class="team-card">
@@ -119,8 +126,8 @@
                     </div>
                     <h3 class="text-xl font-bold mb-1">Luis Gavilán</h3>
                     <p class="text-green-600 font-bold text-xs mb-4 uppercase tracking-widest">Gerente de Flota</p>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-6 flex-grow">Experto en optimización de rutas, mantenimiento preventivo y gestión de transporte pesado.</p>
-                    <a href="https://www.facebook.com/share/1ATjUgWrbp/" target="_blank" class="bg-[#1877F2] text-white py-3 rounded-full font-bold text-sm transition hover:opacity-90">Perfil Facebook</a>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-6 flex-grow">Experto en optimización de rutas, mantenimiento y gestión de transporte pesado.</p>
+                    <a href="https://www.facebook.com/share/1ATjUgWrbp/" target="_blank" class="bg-[#1877F2] text-white py-3 rounded-full font-bold text-sm transition hover:opacity-90">Facebook</a>
                 </div>
 
                 <div class="team-card">
@@ -130,7 +137,7 @@
                     <h3 class="text-xl font-bold mb-1">Jefferson Ávalos</h3>
                     <p class="text-green-600 font-bold text-xs mb-4 uppercase tracking-widest">Gerente de Operaciones</p>
                     <p class="text-sm text-gray-600 leading-relaxed mb-6 flex-grow">Líder en logística operativa y optimización de rendimientos en campo.</p>
-                    <a href="https://www.facebook.com/share/1K1u1x6YJy/" target="_blank" class="bg-[#1877F2] text-white py-3 rounded-full font-bold text-sm transition hover:opacity-90">Perfil Facebook</a>
+                    <a href="https://www.facebook.com/share/1K1u1x6YJy/" target="_blank" class="bg-[#1877F2] text-white py-3 rounded-full font-bold text-sm transition hover:opacity-90">Facebook</a>
                 </div>
 
             </div>
@@ -139,12 +146,11 @@
 
     <footer class="bg-[#0a192f] text-white p-12 text-center border-t-8 border-yellow-400 mt-10">
         <p class="text-yellow-400 font-bold text-5xl mb-6 uppercase tracking-tighter italic">NEO PISK</p>
-        <p class="text-sm opacity-70 mb-8 font-bold tracking-widest uppercase">Ernesto Alejandro Piskulich Ceel - CEO Fundador</p>
-        <div class="flex justify-center gap-10 flex-wrap">
-            <a href="https://www.facebook.com/ernest.pisk" target="_blank" class="text-5xl text-blue-500 hover:scale-125 transition"><i class="fab fa-facebook"></i></a>
-            <a href="https://chat.whatsapp.com/FPsbpJ4wA740akDk9kHutu" target="_blank" class="text-5xl text-green-500 hover:scale-125 transition"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://t.me/+hg27bwudfzMxMGYx" target="_blank" class="text-5xl text-sky-400 hover:scale-125 transition"><i class="fab fa-telegram"></i></a>
-            <a href="https://www.youtube.com/@NeoPisk" target="_blank" class="text-5xl text-red-600 hover:scale-125 transition"><i class="fab fa-youtube"></i></a>
+        <div class="flex justify-center gap-10 flex-wrap text-4xl mt-6">
+            <a href="https://www.facebook.com/ernest.pisk" target="_blank" class="text-blue-500 hover:scale-110"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/51908066095" target="_blank" class="text-green-500 hover:scale-110"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/+hg27bwudfzMxMGYx" target="_blank" class="text-sky-400 hover:scale-110"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.youtube.com/@NeoPisk" target="_blank" class="text-red-600 hover:scale-110"><i class="fab fa-youtube"></i></a>
         </div>
     </footer>
 
@@ -153,7 +159,7 @@
         const usd = document.getElementById('usdInput').value;
         const precioTokenUSD = 0.10; 
         if (usd > 0) {
-            const tokens = (usd / precioTokenUSD).toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+            const tokens = (usd / precioTokenUSD).toLocaleString('en-US');
             document.getElementById('piskResult').innerText = tokens;
         } else {
             document.getElementById('piskResult').innerText = "0";
@@ -161,4 +167,4 @@
     }
     </script>
 </body>
-</html>    
+</html>
