@@ -90,23 +90,28 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
-            <div class="glass-panel border-t-4 border-yellow-400">
-                <h3 class="text-xl font-bold mb-2">Preventa Seed PISK</h3>
-                <p class="text-xs opacity-70 mb-6 uppercase tracking-wider">Calcula tu participación</p>
-                <label class="text-xs opacity-50 uppercase font-bold">Monto USD a invertir</label>
-                <input type="number" id="usdInput" placeholder="0.00" oninput="calcularPiskUSD()">
-                <div class="my-8">
-                    <p class="text-xs opacity-50 uppercase font-bold">$PISK a recibir:</p>
-                    <div class="flex items-baseline gap-2">
-                        <span id="piskResult" class="text-6xl font-bold text-green-400">0</span>
-                        <span class="text-green-400 font-bold text-xl">$PISK</span>
-                    </div>
-                </div>
-                <a href="https://neopisk.lat/invertir.html" target="_blank" class="btn-pisk">INVERTIR EN $PISK AHORA</a>
-                <p class="text-[10px] mt-4 opacity-40 text-center uppercase tracking-widest font-bold">⚠️ Red Polygon (MATIC) únicamente.</p>
-            </div>
+    <div class="glass-panel border-t-4 border-yellow-400">
+        <h3 class="text-xl font-bold mb-2">Preventa Seed PISK</h3>
+        <p class="text-xs opacity-70 mb-6 uppercase tracking-wider">Calcula tu participación</p>
+        
+        <label class="text-xs opacity-50 uppercase font-bold">Monto USD a invertir</label>
+        
+        <input type="number" id="usdInput" placeholder="0.00" oninput="calcularPiskUSD()" 
+               style="width: 100%; padding: 10px; margin-top: 5px; border-radius: 8px; border: none; color: #000000; background-color: #ffffff; font-weight: bold; font-size: 1.2rem;">
 
-            <div>
+        <div class="my-8">
+            <p class="text-xs opacity-50 uppercase font-bold">$PISK a recibir:</p>
+            <div class="flex items-baseline gap-2">
+                <span id="piskResult" class="text-6xl font-bold text-green-400">0</span>
+                <span class="text-green-400 font-bold text-xl">$PISK</span>
+            </div>
+        </div>
+        
+        <a href="https://invertir.lat" target="_blank" class="btn-pisk">INVERTIR EN $PISK AHORA</a>
+        
+        <p class="text-[10px] mt-4 opacity-40 text-center uppercase tracking-widest font-bold">⚠️ Red Polygon (MATIC) únicamente.</p>
+    </div>
+</div>
                 <div class="bg-gray-100 text-black p-4 rounded-xl mb-6 flex items-center gap-4 shadow-lg border-l-4 border-green-600">
                     <span class="text-2xl">🚜+🌍</span>
                     <p class="font-bold text-sm uppercase">Hoja de Ruta de Expansión Global</p>
